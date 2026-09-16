@@ -1,0 +1,27 @@
+Questão 01. Truncamento de Tipos e Coerção Implícita — Um estudante do curso de ADS
+escreveu o programa em C abaixo visando entender o comportamento de variáveis e atribuições
+de tipos incompatíveis. Analise o código, compile mentalmente ou em seu ambiente de
+desenvolvimento e responda às questões indicadas.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int valor_inteiro;
+    valor_inteiro = 2.97;
+    printf("O valor armazenado eh: %d\n", valor_inteiro);
+    system("PAUSE");
+    return 0;
+}
+
+a) Qual é o valor numérico que será efetivamente exibido no console ao executar esse programa?
+R = O valor exibido será 2.
+
+b) Explique por que isso ocorre. Qual é o nome do fenômeno que acontece nessa atribuição?
+R = Isso ocorre pois o valor_inteiro é declarado como um int, um inteiro, como uma variável de números inteiros, ele gosta de números inteiros, logo realiza
+uma coerção implícita de float para int, quando o valor 2.97 é inserido, o código ignora o .97 e pega só a parte inteira, que é 2, o fenômeno é chamado de
+truncamento (coerção implícita quando o float é convertido para int, truncamento quando ele ignora o .97 e trunca pra 2).
+
+c) Como este tipo de comportamento pode ser evitado ou controlado explicitamente em C pelo programador caso ele necessite arredondar o valor ou manter a precisão?
+R = Caso o programador queira manter a precisão, basta guardar a variável como um float ou double ao invés de int, caso o programador queira arredondar, pode-se
+utilizar funções como "round()" da biblioteca <math.h>.

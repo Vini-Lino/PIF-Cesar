@@ -1,0 +1,14 @@
+Questão 02. Entrada Standard de Caracteres vs. Bibliotecas Legadas — Historicamente, literaturas de C utilizam funções unbuffered de entrada definidas na
+biblioteca legada e não-padrão <conio.h>, tais como getch() e getche(), para ler caracteres imediatamente sem exigir que ousuário pressione [ENTER]. Sob a
+perspectiva da portabilidade moderna da linguagem e do padrão ANSI C:
+
+a) Por que o uso de funções contidas em <conio.h> deve ser evitado em sistemas modernos (Linux, macOS, servidores)?
+R = A biblioteca <conio.h> deve ser evitada pois por não fazer parte do padrão ANSI/ISO C, ela só funciona no ambiente Windows e DOS, logo, suas funções como
+getch() e getche() não estão disponíveis em compiladores Linux ou MacOS, o que é um grande problema visto que boa parte dos servidores do mundo rodam em Linux.
+
+b) Quais são as funções equivalentes e portáveis fornecidas pela biblioteca padrão <stdio.h> para entrada e saída de caracteres?
+R = A biblioteca padrão <stdio.h> fornece funções portáveis como getchar() e putchar(), além de fgetc() e fputc(), para entrada e saída de caracteres.
+
+c) Escreva um pequeno trecho de código padrão C que leia um caractere do console de maneira robusta, ignorando eventuais quebras de linha ('\n') residuais no
+buffer do teclado.
+R = Veja Q2.c

@@ -1,0 +1,25 @@
+Questão 06. Comportamento e Precedência dos Incrementos — O comportamento de incrementos prefixados e pós-fixados (++x e x++) é uma fonte frequente de erros sutis na
+Linguagem C. Analise os dois trechos de código independentes abaixo e responda:
+
+// Trecho A
+int n = 5;
+int x = ++n;
+printf("Trecho A: n = %d, x = %d\n", n, x);
+
+// Trecho B
+int m = 5;
+int y = m++;
+printf("Trecho B: m = %d, y = %d\n", m, y);
+
+a) Explique a diferença de fluxo e atribuição que ocorre entre o operador prefixado (++n) e o pós-fixado (m++). Quais serão os valores impressos na tela por cada
+trecho?
+R = No operador prefixado ++n, a variável é incrementada primeiro e seu novo valor é utilizado na expressão. Assim, no Trecho A, n passa de 5 para 6 e x recebe 6,
+resultando em: "Trecho A: n = 6, x = 6" | No operador pós-fixado m++, o valor atual da variável é utilizado primeiro e o incremento ocorre depois. Assim, no Trecho B,
+y recebe 5 e posteriormente m passa para 6: "Trecho B: m = 6, y = 5".
+
+b) Um programador júnior tentou imprimir uma variável em printf() modificando-a múltiplas vezes de forma sequencial na mesma chamada:
+printf("%d\t%d\t%d\n", n, n+1, n++);. Explique por que essa instrução pode gerar resultados inconsistentes e imprevisíveis dependendo do compilador adotado
+(comportamento indefinido).
+R = A expressão "printf("%d\t%d\t%d\n", n, n+1, n++);" apresenta comportamento indefinido porque n é acessada e modificada na mesma expressão sem uma ordenação
+garantida entre essas operações. A linguagem C não estabelece uma ordem específica para a avaliação dos argumentos de uma chamada de função. Portanto, o resultado
+pode variar conforme o compilador e as opções de compilação. Para evitar esse problema, a modificação de n deve ser realizada em uma instrução separada.
