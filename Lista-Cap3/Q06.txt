@@ -1,0 +1,47 @@
+a) Valor final de x
+
+O valor final de x será 6.
+
+b) Passo a passo das comparações e incrementos
+
+O operador pós-fixado x++ utiliza o valor atual de x na comparação e, em seguida, incrementa a variável em uma unidade. O ponto e vírgula após o while indica
+que o corpo do laço é vazio.
+
+A execução ocorre da seguinte maneira:
+
+Primeira comparação: 0 < 5 é verdadeira. Depois, x passa a valer 1.
+Segunda comparação: 1 < 5 é verdadeira. Depois, x passa a valer 2.
+Terceira comparação: 2 < 5 é verdadeira. Depois, x passa a valer 3.
+Quarta comparação: 3 < 5 é verdadeira. Depois, x passa a valer 4.
+Quinta comparação: 4 < 5 é verdadeira. Depois, x passa a valer 5.
+Sexta comparação: 5 < 5 é falsa. Mesmo assim, o incremento pós-fixado ocorre, fazendo x passar a valer 6.
+
+Como a condição se torna falsa, o laço termina e o printf() imprime o valor final de x.
+
+Saída:
+
+Valor final de x = 6
+
+
+c) Reescrita explícita, sem corpo vazio
+
+#include <stdio.h>
+
+int main()
+{
+    int x = 0;
+
+    while (x < 5) {
+        x++;
+    }
+
+    x++;
+
+    printf("Valor final de x = %d\n", x);
+
+    return 0;
+}
+
+
+Nessa versão, o laço incrementa x de 0 até 5. Após o término do laço, o incremento adicional faz x passar a valer 6, preservando exatamente o resultado
+original.

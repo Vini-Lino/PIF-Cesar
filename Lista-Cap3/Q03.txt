@@ -1,0 +1,54 @@
+a) Sequência exata de valores impressos no Trecho A
+
+O laço começa com a = 36, verifica se a > 0 e, ao final de cada iteração, divide a por 2 usando divisão inteira. Como a é um número inteiro, as partes decimais
+são descartadas.
+
+A sequência impressa será:
+
+36    18    9    4    2    1
+
+
+Após imprimir 1, o valor de a passa a ser 0, fazendo com que a condição a > 0 se torne falsa e o laço termine.
+
+b) Comportamento do Trecho B e função dos parênteses
+
+No trecho B, a inicialização e o incremento do for foram omitidos. A cada iteração, a função getch() lê um caractere do teclado e o armazena na variável ch. Se
+o caractere lido for diferente de 'X', o programa executa printf("%c", ch + 1), imprimindo o caractere cujo código numérico é uma unidade maior que o do
+caractere lido. Por exemplo, se o usuário digitar A, será impresso B.
+
+Quando o usuário digita X, a condição se torna falsa e o laço termina, sem imprimir esse caractere.
+
+Os parênteses em (ch = getch()) são necessários para garantir que a atribuição seja realizada antes da comparação com 'X'. O valor retornado por getch() é
+atribuído a ch, e o resultado dessa atribuição é então comparado com 'X'. Sem os parênteses, a precedência dos operadores faria com que a expressão fosse
+interpretada de outra forma, alterando seu comportamento.
+
+Observação: getch() não pertence à biblioteca padrão de C e depende do compilador ou de uma biblioteca específica.
+
+c) Como interromper programaticamente o laço infinito do Trecho C
+
+O laço for (;;) não possui condição de teste, sendo considerado infinito. Para interrompê-lo de forma programática, pode-se utilizar a instrução break, que
+encerra imediatamente o laço quando uma condição de saída é satisfeita.
+
+Por exemplo:
+
+#include <stdio.h>
+
+int main()
+{
+    int i = 0;
+
+    for (;;) {
+        printf("Laço Infinito\n");
+        i++;
+
+        if (i == 5) {
+            break;
+        }
+    }
+
+    return 0;
+}
+
+
+Nesse exemplo, o laço é encerrado após cinco repetições, quando i atinge o valor 5. Assim, o programa termina o laço de maneira controlada, sem precisar ser
+encerrado externamente pelo sistema operacional.

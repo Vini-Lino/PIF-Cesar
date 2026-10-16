@@ -1,0 +1,31 @@
+a) Diferença entre while e do-while
+
+A diferença essencial entre as estruturas while e do-while está no momento em que a condição é avaliada. Na estrutura while, a condição é verificada antes da
+execução do bloco de código. Portanto, se a condição for falsa desde o início, o bloco não será executado nenhuma vez.
+
+Já na estrutura do-while, a condição é verificada somente depois da execução do bloco. Dessa forma, o código é executado pelo menos uma vez, mesmo que a 
+condição seja falsa inicialmente.
+
+b) Situações adequadas para cada estrutura
+
+for: é mais adequado quando se conhece previamente a quantidade de repetições ou quando existe uma variável de controle que precisa ser
+inicializada, atualizada e testada. Um exemplo é percorrer os elementos de um vetor.
+
+while: é indicado quando a repetição depende de uma condição e não se sabe antecipadamente quantas vezes o bloco precisará ser executado.
+Um exemplo é repetir a leitura de dados até que o usuário forneça um valor válido.
+
+do-while: é indicado quando o bloco precisa ser executado pelo menos uma vez antes da verificação da condição. Um exemplo é exibir um menu
+e solicitar uma opção ao usuário, repetindo o menu enquanto a opção informada não for a de saída.
+
+A escolha da estrutura depende da finalidade do programa e de qual delas torna o código mais claro e legível.
+
+c) Análise do trecho while (condicao);
+
+Esse trecho não é um erro de compilação, pois o ponto e vírgula após o while representa uma instrução vazia, que é válida na linguagem C. Entretanto, pode ser
+um erro de lógica, dependendo da intenção do programador.
+
+Quando a condição é verdadeira, o programa executa repetidamente o laço vazio, sem realizar nenhuma operação dentro dele. A condição é reavaliada a cada
+iteração. Se continuar verdadeira indefinidamente, o programa ficará preso em um laço infinito, sem avançar para a próxima instrução.
+
+Se a condição se tornar falsa por algum efeito externo ou por alterações realizadas em outra parte do programa, o laço terminará. Caso a intenção fosse executar
+um bloco de código repetidamente, seria necessário remover o ponto e vírgula e utilizar chaves para delimitar as instruções do laço.

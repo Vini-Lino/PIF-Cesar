@@ -1,0 +1,49 @@
+a) Por que o compilador emitirá um erro na instrução printf() final?
+
+O erro ocorre porque a variável soma foi declarada dentro do bloco de código do laço for. Em C, uma variável local declarada dentro de um bloco só pode
+ser acessada nesse bloco e nos blocos internos. Como o printf() está fora do laço, a variável soma não está visível nesse ponto do programa, causando um
+erro de compilação.
+
+b) Por que o valor de soma estaria incorreto mesmo se o printf() estivesse dentro do laço?
+
+A variável soma é inicializada com zero a cada iteração do laço. Assim, a cada repetição, seu valor anterior é perdido e apenas o quadrado do número da
+iteração atual é acumulado. Por exemplo, quando i vale 3, a variável recebe inicialmente zero e depois passa a valer 9, em vez de acumular os quadrados
+de 1, 2 e 3, cujo resultado seria 14.
+
+c) Código corrigido e conceitos de escopo e tempo de vida
+
+Código corrigido:
+
+#include <stdio.h>
+
+int main()
+{
+    int i;
+    int soma = 0;
+
+    for (i = 1; i < 10; i++) {
+        soma += i * i;
+    }
+
+    printf("Soma final = %d\n", soma);
+
+    return 0;
+}
+
+
+Saída esperada:
+
+Soma final = 285
+
+
+Conceitos:
+
+Visibilidade: determina em quais partes do código um identificador pode ser utilizado. No programa original, soma não pode ser acessada pelo printf() que está
+fora do bloco em que foi declarada.
+Escopo de bloco: uma variável local declarada dentro de um bloco delimitado por chaves {} tem seu escopo restrito a esse bloco, estendendo-se também aos blocos
+internos.
+Tempo de vida: corresponde ao período durante o qual o objeto existe durante a execução. Uma variável local automática, como soma, existe enquanto o bloco em
+que foi declarada está em execução. Ao entrar novamente no bloco em outra iteração, uma nova instância da variável é criada e inicializada com zero.
+
+Ao declarar soma antes do laço e inicializá-la apenas uma vez, o programa mantém o acumulado durante todas as iterações. Dessa forma, calcula corretamente a
+soma dos quadrados dos números inteiros de 1 a 9, cujo resultado é 285.

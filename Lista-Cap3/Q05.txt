@@ -1,0 +1,39 @@
+a) Quantas iterações serão executadas?
+
+O laço executará 5 iterações. Inicialmente, i = 0 e j = 10. A cada repetição, i aumenta em uma unidade e j diminui em uma unidade. O laço continua enquanto
+i < j. Quando ambas as variáveis chegam a 5, a condição se torna falsa e a execução termina.
+
+b) Saída exata do programa
+
+i = 0, j = 10 | soma = 10
+i = 1, j = 9 | soma = 10
+i = 2, j = 8 | soma = 10
+i = 3, j = 7 | soma = 10
+i = 4, j = 6 | soma = 10
+
+
+Em todas as iterações, a soma de i + j permanece igual a 10.
+
+c) Reescrita utilizando while
+
+#include <stdio.h>
+
+int main()
+{
+    int i, j;
+
+    i = 0;
+    j = 10;
+
+    while (i < j) {
+        printf("i = %d, j = %d | soma = %d\n", i, j, i + j);
+        i++;
+        j--;
+    }
+
+    return 0;
+}
+
+
+Nessa versão, as variáveis são inicializadas antes do while, a condição i < j é verificada antes de cada iteração e os comandos i++ e j-- atualizam os valores
+ao final de cada repetição, reproduzindo o comportamento do for original.

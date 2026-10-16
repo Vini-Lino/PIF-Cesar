@@ -1,0 +1,16 @@
+a) Funcionamento do comando break
+
+O comando break encerra imediatamente o laço de repetição (for, while ou do-while) em que está localizado. Após sua execução, o programa continua a partir da
+primeira instrução depois desse laço, sem realizar novas iterações.
+
+b) Funcionamento do comando continue dentro de um laço for
+
+O comando continue interrompe a iteração atual, ignorando as instruções restantes do corpo do laço, e passa para a próxima iteração.
+
+Em um laço for, após a execução de continue, a expressão de incremento ou atualização é executada imediatamente. Em seguida, a condição de teste é avaliada
+novamente para determinar se o laço deve continuar.
+
+c) Funcionamento do break em laços aninhados
+
+Quando o comando break é executado dentro de um laço interno, somente esse laço é interrompido. O laço externo continua sua execução normalmente, prosseguindo
+para a próxima etapa de sua própria repetição, salvo se houver outra instrução que o interrompa.
