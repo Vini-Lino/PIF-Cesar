@@ -1,0 +1,9 @@
+Alternativa correta: c) Pré-processador (fase do compilador que altera o programa-fonte antes da compilação propriamente dita).
+
+Justificativa:
+
+As diretivas de pré-processador em C, identificadas pelo caractere #, são processadas pelo pré-processador antes da compilação do código-fonte. Essa etapa
+realiza tarefas como incluir arquivos de cabeçalho por meio de #include, definir macros com #define e controlar a compilação condicional com diretivas como
+#ifdef e #ifndef.
+
+Após o pré-processamento, o código resultante segue para as etapas seguintes de compilação, montagem e linkedição, até que o programa executável seja gerado.

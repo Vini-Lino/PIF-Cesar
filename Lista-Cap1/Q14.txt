@@ -1,0 +1,10 @@
+Alternativa correta: a) Instruir o compilador a carregar as definições das funções da biblioteca padrão antes de compilar o código-fonte.
+
+Justificativa:
+
+A diretiva #include, utilizada para incluir arquivos de cabeçalho como <stdio.h>, permite que o pré-processador insira as declarações necessárias no código
+antes da compilação. Esses arquivos contêm protótipos de funções, definições de tipos, macros e constantes, permitindo que o compilador reconheça recursos
+como printf() e scanf().
+
+A inclusão do cabeçalho não realiza a linkedição nem gera automaticamente o arquivo executável. Essas etapas fazem parte de outras fases do processo de
+construção do programa.

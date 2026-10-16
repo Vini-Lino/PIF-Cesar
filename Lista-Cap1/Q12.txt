@@ -1,0 +1,22 @@
+a) int a; Status: Correto. Justificativa: A declaração está correta, pois utiliza o tipo int para declarar a variável a, destinada a armazenar um valor inteiro.
+
+b) float b; Status: Correto. Justificativa: A declaração está correta, pois utiliza o tipo float para declarar a variável b, destinada a armazenar um número de
+ponto flutuante com precisão simples.
+
+c) double float c; Status: Incorreto. Justificativa: A declaração combina os tipos double e float de forma inválida. Esses são especificadores de tipo distintos
+e não podem ser utilizados juntos dessa maneira. O correto seria utilizar apenas um deles, como double c; ou float c;.
+
+d) unsigned char d; Status: Correto. Justificativa: A declaração está correta, pois unsigned pode ser utilizado com char para declarar uma variável capaz de
+armazenar valores de caractere sem sinal.
+
+e) unsigned e; Status: Correto. Justificativa: A declaração é válida em C, pois unsigned, quando utilizado sem outro especificador de tipo inteiro, equivale a
+unsigned int. Assim, a variável e é declarada como um inteiro sem sinal.
+
+f) long float f; Status: Incorreto. Justificativa: O especificador long não pode ser utilizado com float. Para declarar um número de ponto flutuante com
+precisão estendida, deve-se utilizar long double f;.
+
+g) long g; Status: Correto. Justificativa: A declaração está correta, pois long, quando utilizado sozinho nesse contexto, equivale a long int. A variável g
+poderá armazenar um valor inteiro de tipo long.
+
+h) long double h; Status: Correto. Justificativa: A declaração está correta, pois long double é um tipo válido em C, utilizado para representar números de ponto
+flutuante com precisão estendida em relação ao tipo double, dependendo da implementação.

@@ -1,0 +1,19 @@
+este é o código da questão 5
+
+main()
+{
+    printf("Linguagem C");
+    system("pause");
+}
+
+ele está incorreto, pois há alguns elementos muito importantes faltando, o código completo ficaria:
+
+#include <stdio.h> // incluir a biblioteca stdio.h, que contém o printf
+#include <stdlib.h> // incluir a biblioteca stdlib.h, que contém o system("pause"), não acho ele necessário, além de nem funcionar no meu pinguim (Linux), mas como ta aqui... 
+
+int main() // na linguagem C, é preciso definir o tipo das funções ou variáveis, logo tem que colocar o int de inteiro antes do main, sendo main uma função do tipo inteiro
+{
+    printf("Linguagem C");
+    system("pause");
+    return 0; // retornar 0 para indicar que o código foi finalizado com sucesso
+}

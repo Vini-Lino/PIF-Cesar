@@ -1,0 +1,23 @@
+\r — Sequência de escape (retorno de carro) — char*
+2130 — Constante inteira decimal — int
+-123 — Constante inteira decimal negativa — int
+33.28 — Constante de ponto flutuante decimal — double
+0XFA — Constante inteira hexadecimal — int
+0101 — Constante inteira octal — int
+2.0e30 — Constante de ponto flutuante em notação científica — double
+\xDC — Sequência de escape hexadecimal — char*
+'"' — Constante de caractere (aspa dupla) — int
+'\' — Constante de caractere (barra invertida) — int
+'F' — Constante de caractere — int
+0 — Constante inteira decimal — int
+'\0' — Constante de caractere nulo — int
+"F" — Constante string (literal de string) — char[]
+-4567.89 — Constante de ponto flutuante negativa — double
+
+
+Observações:
+
+As sequências \r e \xDC, isoladas, não são constantes válidas em C; normalmente aparecem dentro de aspas simples ou duplas.
+Constantes de caractere entre aspas simples têm tipo int em C.
+Literais de ponto flutuante sem sufixo, como f ou F, têm tipo double.
+O sinal negativo é um operador aplicado à constante, não parte do literal em si.

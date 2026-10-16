@@ -1,0 +1,9 @@
+a) Imprime uma linha vazia, depois uma tabulação e o texto "Bom dia! Shirley."
+
+b) Imprime "Você já tomou café?" e depois quebra a linha
+
+c) Imprime duas linhas vazias, depois "A solução não existe!", quebra a linha e imprime "Não insista."
+
+d) Imprime "Duas, linhas, de e saída", separados por tabulações. Depois, quebra a linha e imprime "ou e uma?", também separados por tabulação
+
+e) Imprime cada palavra em uma linha diferente: um, dois e três. Após a última palavra, também ocorre uma quebra de linha

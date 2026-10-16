@@ -1,0 +1,11 @@
+Alternativas sintaticamente corretas: a), b) e c).
+
+Justificativa:
+
+As alternativas a), b) e c) estão corretas, pois a função printf() é chamada com parênteses, e a string a ser exibida está entre aspas duplas. As diferenças de
+espaçamento entre o nome da função, os parênteses e a string não alteram o significado da instrução.
+
+A alternativa d) está incorreta porque omite os parênteses necessários para realizar a chamada da função printf().
+
+Essas variações demonstram que a linguagem C permite flexibilidade na utilização de espaços em branco entre os elementos de uma instrução, desde que sua
+estrutura sintática seja respeitada.

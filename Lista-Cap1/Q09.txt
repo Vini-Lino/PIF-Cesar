@@ -1,0 +1,9 @@
+O primeiro printf() utiliza o modificador %c, que imprime um único caractere por argumento. A sequência '\n' provoca uma quebra de linha, '\t' insere uma
+tabulação horizontal e '\"' imprime uma aspa dupla.Em seguida, o programa imprime o texto Primeiro programa.
+
+No segundo printf(), ocorre um erro na utilização do especificador de formato: %c espera um argumento do tipo int correspondente a um caractere, mas foi
+passada a string "\"", delimitada por aspas duplas. Essa incompatibilidade provoca comportamento indefinido, impossibilitando determinar uma saída exata e
+garantida para essa instrução.
+
+Para corrigir o problema, pode-se utilizar printf("%c", '\"');, passando uma constante de caractere entre aspas simples. Por fim, system("PAUSE") aguarda uma
+tecla no Windows (incompatível com o meu Linux...), e return 0; encerra o programa.

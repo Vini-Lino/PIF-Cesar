@@ -1,0 +1,32 @@
+main() // Na linguagem C, é necessário definir o tipo de retorno das funções. Por isso, deve-se colocar "int" antes de "main", indicando que a função retorna um valor inteiro.
+{
+    int a=1; b=2; c=3: // O ponto e vírgula após "a=1" encerra a declaração da variável "a". Dessa forma, "b=2" e "c=3" ficam fora da declaração de variáveis. O correto seria declarar todas juntas, separando-as por vírgulas e colocando apenas um ponto e vírgula no final. Além disso, foi utilizado ":" em vez de ";" após "c=3".
+    printf("0s números são: %d%d%d\n, a, b, c, d); // As aspas da string não foram fechadas corretamente, causando um erro de sintaxe. O correto seria fechar as aspas após os especificadores "%d" e passar as variáveis como argumentos da função. Também foi utilizado o número "0" no lugar da letra "O" em "Os". Além disso, a variável "d" não foi declarada e não deveria ser utilizada.
+    system("pause"); // Estão faltando as bibliotecas necessárias para utilizar as funções printf e system. Deve-se incluir <stdio.h> para printf e <stdlib.h> para system, antes da função main.
+}
+
+Código corrigido:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    int a = 1, b = 2, c = 3;
+
+    printf("Os números são: %d %d %d\n", a, b, c);
+
+    system("pause");
+    return 0;
+}
+
+Resumo:
+
+1. Falta do tipo de retorno int na declaração da função main().
+2. Uso incorreto do ponto e vírgula após a=1, encerrando a declaração antes das variáveis b e c.
+3. Uso de dois-pontos (:) em vez de ponto e vírgula (;) após c=3.
+4. Falta de fechamento correto das aspas na string passada para printf().
+5. Uso do número 0 no lugar da letra O na palavra "Os".
+6. Uso da variável d sem que ela tenha sido declarada.
+7. Ausência da biblioteca <stdio.h>, necessária para utilizar printf().
+8. Ausência da biblioteca <stdlib.h>, necessária para utilizar system().

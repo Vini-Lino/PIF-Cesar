@@ -1,0 +1,9 @@
+Alternativa correta: c) São arquivos de texto ASCII padrão contendo protótipos de funções, definições de constantes, macros e tipos.
+
+Justificativa:
+
+Os arquivos de inclusão, também chamados de headers e geralmente identificados pela extensão .h, contêm declarações e definições que podem ser utilizadas pelos
+programas em C. Eles podem incluir protótipos de funções, macros, constantes e definições de tipos.
+
+A diretiva #include permite incluir o conteúdo desses arquivos no código-fonte durante a etapa de pré-processamento, possibilitando que o compilador reconheça
+as declarações necessárias para utilizar determinadas funções e recursos.

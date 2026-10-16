@@ -1,0 +1,10 @@
+O programa começa a execução pela função main() e utiliza a função printf() para imprimir o texto "Primeiro programa" no console.
+
+A sequência \n provoca uma quebra de linha antes do texto, deixando uma linha vazia no início da saída. A sequência \t insere uma tabulação horizontal antes
+das palavras, deslocando o texto para a direita. Já a sequência \" permite imprimir as aspas duplas no console sem encerrar a string.
+
+Em seguida, a função system("PAUSE") executa o comando PAUSE do Windows (ignorando o meu pinguim...), aguardando que o usuário pressione uma tecla para
+continuar. Por fim, return 0; encerra o programa indicando que a execução terminou normalmente.
+
+A saída do printf() será uma linha vazia seguida de uma tabulação e do texto "Primeiro programa", com as aspas duplas visíveis. A mensagem de pausa, quando
+exibida, depende do ambiente de execução.

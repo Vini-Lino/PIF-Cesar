@@ -1,0 +1,9 @@
+Alternativa correta: c) Uma diretiva especial para o pré-processador C, executada antes da compilação.
+
+Justificativa:
+
+A diretiva #include é uma instrução destinada ao pré-processador da linguagem C, responsável por incluir o conteúdo de arquivos de cabeçalho no código-fonte
+antes da etapa de compilação. Por exemplo, #include <stdio.h> permite incluir as declarações necessárias para utilizar funções como printf() e scanf().
+
+Diferentemente das instruções comuns da linguagem C, as diretivas do pré-processador começam com o símbolo # e são processadas antes da compilação
+propriamente dita.
