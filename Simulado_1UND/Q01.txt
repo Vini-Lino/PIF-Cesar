@@ -1,0 +1,4 @@
+Alternativa correta: c)
+
+A linguagem C diferencia letras maiúsculas e minúsculas (case-sensitive). Portanto, valor e VALOR, peso e Peso, taxa e TAXA são identificadores distintos para
+o compilador.

@@ -1,0 +1,10 @@
+a) A diferença essencial entre while e do-while está no momento em que a condição é testada. No while, a condição é verificada antes da execução do bloco,
+podendo ocorrer zero execuções se ela for falsa inicialmente. Já no do-while, a condição é verificada após a execução do bloco, garantindo que ele seja
+executado pelo menos uma vez.
+
+b) O laço for é mais adequado quando o número de repetições é conhecido ou quando existe um contador com início, condição e incremento bem definidos. Ele
+reúne essas três partes em uma única linha, tornando o código mais organizado e legível, como ao percorrer uma sequência de números.
+
+c) O trecho while (condicao); não constitui um erro de compilação, mas pode causar um erro de lógica. O ponto e vírgula após o while representa um bloco
+vazio, fazendo com que o laço não execute nenhuma instrução útil. Se a condição for verdadeira e não mudar, o programa ficará preso em um laço infinito,
+pois a condição será testada repetidamente sem que nada seja executado para torná-la falsa.

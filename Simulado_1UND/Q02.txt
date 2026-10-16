@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>; // O ponto e vírgula após o include é desnecessário
+
+int Main() // A linguagem C é case-sensitive, "int Main" está errado, o correto é "int main", com o "main" escrito com "m" minúsculo
+{
+    int idade = 20;
+    printf( A idade do aluno eh: %d anos.. , idade); // O texto deve estar entre aspas duplas, o texto correto seria: "printf("A idade do aluno eh: %d anos..", idade);", com as aspas
+    cout << endl; // Em C, usamos printf para imprimir uma quebra de linha
+    system("PAUSE"); // comando que não funciona fora do Windows, como no Linux
+    return 0;
+}
+
+Resumo:
+1. Ponto e vírgula indevido no #include: a diretiva #include <stdlib.h>; contém um ponto e vírgula desnecessário após o nome da biblioteca.
+2. Nome incorreto da função principal: int Main() deveria ser int main(), pois C diferencia letras maiúsculas e minúsculas.
+3. Uso incorreto do printf: a mensagem de texto não está entre aspas duplas, e o especificador %d deve ficar dentro da string. O correto seria: "printf("A idade do aluno eh: %d anos.\n", idade);"

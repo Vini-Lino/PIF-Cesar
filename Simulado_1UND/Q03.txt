@@ -1,0 +1,17 @@
+Inicialmente, temos a = 2, b = 4, c = 5 e d = 10.
+
+Na primeira operação, a += b + c, temos a = 2 + 4 + 5 = 11.
+
+Na segunda operação, b *= c = d - 2, primeiro calculamos d - 2 = 10 - 2 = 8, atribuindo esse valor a c. Em seguida, b = 4 * 8 = 32. Portanto, b = 32 e c = 8.
+
+Na terceira operação, d %= a + 3, temos d = 10 % 14 = 10, pois o resto da divisão de 10 por 14 é 10.
+
+Na última operação, a += b += c += 5, as atribuições são realizadas da direita para a esquerda. Primeiro, c = 8 + 5 = 13; depois, b = 32 + 13 = 45; por fim,
+a = 11 + 45 = 56.
+
+Valores finais: a = 56, b = 45, c = 13 e d = 10.
+
+a = 56
+b = 45
+c = 13
+d = 10

@@ -1,0 +1,32 @@
+a) O compilador emitirá um erro porque a variável soma foi declarada dentro do bloco do for, estando acessível apenas nesse escopo. Portanto, ela não pode ser
+utilizada no printf fora do laço. Além disso, como foi inicializada com zero a cada iteração, a soma acumulada não seria mantida.
+
+b) O laço percorre os valores de i de 1 a 10. Quando i == 5, o comando continue pula o restante da iteração e passa para o próximo valor. Quando i == 8, o
+comando break encerra o laço imediatamente. Assim, as iterações que executam o cálculo são as de i = 1, 2, 3, 4, 6 e 7.
+
+c) Código corrigido:
+
+#include <stdio.h>
+
+int main() {
+    int i, soma = 0;
+
+    for (i = 1; i <= 10; i++) {
+        if (i == 5) continue;
+        if (i == 8) break;
+
+        soma += i * i;
+    }
+
+    printf("Soma final = %d\n", soma);
+
+    return 0;
+}
+
+O programa soma os quadrados de 1, 2, 3, 4, 6 e 7:
+
+1+4+9+16+36+49=115
+
+
+Resultado impresso no console:
+Soma final = 115

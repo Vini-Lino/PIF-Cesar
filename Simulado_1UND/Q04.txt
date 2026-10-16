@@ -1,0 +1,16 @@
+Considerando i = 2, j = 3, k = 0, x = 2.5 e y = 5.0, temos:
+
+a) i < j + 2: 2<3+2⇒2<5
+2<3+2⇒2<5. Resultado: 1 (Verdadeiro).
+
+b) 2 * i - 5 <= j - 4: 2×2−5≤3−4⇒−1≤−1
+2×2−5≤3−4⇒−1≤−1. Resultado: 1 (Verdadeiro).
+
+c) !k && (x + y >= 7.5): como k = 0, !k é verdadeiro. Além disso, 2.5+5.0=7.5
+2.5+5.0=7.5, portanto a comparação também é verdadeira. Resultado: 1 (Verdadeiro).
+
+d) !(i == j) || (y / x == 2.0): como i é diferente de j, a primeira condição é verdadeira. Além disso, 5.0/2.5=2.0
+5.0/2.5=2.0, tornando a segunda condição verdadeira também. Resultado: 1 (Verdadeiro).
+
+e) i == 2 && j == 4 || k == 0: o operador && tem precedência sobre ||. Assim, (i == 2 && j == 4) || k == 0 resulta em (1 && 0) || 1, ou seja, 0 || 1.
+Resultado: 1 (Verdadeiro).
